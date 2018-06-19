@@ -3,3 +3,7 @@ body {
   font-family: sans-serif;
   background-color: #607d8b;
 }
+.tabs .indicator {
+    background-color: #fff;
+    color: #fff;
+}
