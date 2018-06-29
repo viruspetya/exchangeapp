@@ -8,10 +8,10 @@
    <nav>
     <div class="nav-wrapper blue-grey darken-3">
       <a href="#!" class="brand-logo center">EOSDELTA</a>
-      <ul class="left hide-on-med-and-down">
-        <li><a href="sass.html">User guide</a></li>
-        <li><a href="badges.html">Get tokens to trade</a></li>
-        <li class="active"><a href="collapsible.html">Trading</a></li>
+      <ul class="left">
+        <li><a href="#">User guide</a></li>
+        <li><a href="#">Get tokens to trade</a></li>
+        <li class="active"><a href="#">Trading</a></li>
       </ul>
     </div>
   </nav>
@@ -19,7 +19,7 @@
     <p><br><br></p>
     <div class="row">
       <div class="col s12 m12 l8 xl9">
-        <div class="card horizontal  blue-grey darken-1">
+        <div class="card horizontal  blue-grey darken-3">
           <div class="card-image">
               <a href="https://placeholder.com"><img src="http://via.placeholder.com/350x150"></a>
           </div>
@@ -32,24 +32,59 @@
         </div>
       </div>
       <div class="col s12 m12 l4 xl3">
-      <div class="card blue-grey lighten-2 white-text">
-        <div class="card-content  blue-grey darken-1 white-text">
-          <p>Here you can buy and sell tokens. Also check your buy/sell orders.</p>
+      <div class="card blue-grey darken-2 white-text">
+        <div class="card-content  blue-grey darken-3 white-text">
+          <p>Here you can create your orders to buy and sell tokens</p>
         </div>
         <div class="card-tabs">
-          <ul class="tabs tabs-fixed-width  blue-grey darken-1">
-            <li class="tab"><a class="white-text" href="#test4">BUY</a></li>
-            <li class="tab"><a class="active white-text" href="#test5">SELL</a></li>
-            <li class="tab"><a class="white-text" href="#test6">ORDERS</a></li>
+          <ul class="tabs tabs-fixed-width  blue-grey darken-3">
+            <li class="tab"><a class="white-text" href="#buy">BUY</a></li>
+            <li class="tab"><a class="active white-text" href="#sell">SELL</a></li>
           </ul>
         </div>
         <div class="card-content">
-          <div  id="test4">Test 1</div>
-          <div  id="test5">Test 2</div>
-          <div  id="test6">Test 3</div>
+          <div  id="buy">
+            <div class="input-field">
+              <input placeholder="Price you want to buy" id="price_you_want_to_buy" type="number" class="validate" step="any" min="0">
+              <label for="price_you_want_to_buy">Price in ETH</label>
+            </div>
+            
+            <div class="input-field">
+              <input placeholder="Amount you want to buy" id="amount_you_want_to_buy" type="number" class="validate" step="any" min="0">
+              <label for="amount_you_want_to_buy">Amount</label>
+            </div>
+            
+            <div class="input-field">
+              <input placeholder="Time until the automatical cancellation of this order" id="date_of_cancellation" type="number" class="validate">
+              <label for="date_of_cancellation">Time(in hours) </label>
+            </div>
+            <br>
+            <br>
+             <button class="btn large waves-effect waves-light blue-grey darken-3" type="submit" name="action">Place an order to buy
+  </button> 
+          </div>
+          <div  id="sell">
+          <div class="input-field">
+              <input placeholder="Price you want to sell" id="price_you_want_to_sell" type="number" class="validate" step="any" min="0">
+              <label for="price_you_want_to_sell">Price in ETH</label>
+            </div>
+            
+            <div class="input-field">
+              <input placeholder="Amount you want to sell" id="amount_you_want_to_sell" type="number" class="validate" step="any" min="0">
+              <label for="amount_you_want_to_sell">Amount</label>
+            </div>
+            
+            <div class="input-field">
+              <input placeholder="Time until the automatical cancellation of this order" id="date_of_cancellation" type="number" class="validate">
+              <label for="date_of_cancellation">Time(in hours) </label>
+            </div>
+            <br>
+            <br>
+             <button class="btn large waves-effect waves-light blue-grey darken-3" type="submit" name="action">Place an order to sell</button>
         </div>
       </div>
     </div>
     </div>
   </div>
+</div>
 </body>
