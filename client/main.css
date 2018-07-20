@@ -7,3 +7,31 @@ body {
     background-color: #fff;
     color: #fff;
 }
+.collection, .collection-item, .collection-header {
+	border-color: #37474f  !important;
+}
+.order-price-down {
+	color: red;
+	font-size: 1.25em;
+	word-spacing: 2em;
+}
+.order-price-up {
+	color: #00d338;
+	font-size: 1.25em;
+	word-spacing: 2em;
+}
+.history-price-up {
+	color: #00d338;
+	font-size: 1.25em;
+	word-spacing: 1em;
+}
+.history-price-down {
+	color: red;
+	font-size: 1.25em;
+	word-spacing: 1em;
+}
+.max-height-400px{
+	max-height: 400px;
+	position: relative;
+	/*overflow-y: scroll;*/
+}
